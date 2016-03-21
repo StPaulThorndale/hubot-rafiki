@@ -12,6 +12,39 @@ has, etc!
 [hubot]: http://hubot.github.com
 [generator-hubot]: https://github.com/github/generator-hubot
 
+### Creating rafiki
+
+The steps below were taken on an Ubuntu 14 (trusty) machine to build rafiki and commit the code into this repository:
+
+```
+cd ~
+export http_proxy=[PROXY_HOST]:8080
+export https_proxy=[PROXY_HOST]:8080
+curl -sL https://deb.nodesource.com/setup | sudo bash -
+sudo apt-get install nodejs build-essential libexpat1-dev libexpat1 libicu-dev
+sudo npm install npm -g
+sudo npm install -g yo generator-hubot
+mkdir hubot-rafiki
+cd hubot-rafiki
+yo hubot
+bin/hubot
+nano hubot.env
+nano start.sh
+chmod +x start.sh
+chmod +x hubot.env
+bash start.sh
+sudo apt-get install git
+git init
+git add .
+git config --global user.email "colossus9@hpe.com"
+git config --global user.name "colossus9"
+git commit -m "Initial commit of working rafiki hubot"
+git remote add origin https://github.com/StPaulThorndale/hubot-rafiki.git
+git pull origin master
+git status
+git push -u origin master
+```
+
 ### Running rafiki Locally
 
 You can test your hubot by running the following, however some plugins will not
