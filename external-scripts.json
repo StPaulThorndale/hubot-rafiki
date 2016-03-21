@@ -8,6 +8,7 @@
   "hubot-pugme",
   "hubot-maps",
   "hubot-redis-brain",
+  "hubot-remember-multiline",
   "hubot-rules",
   "hubot-shipit",
   "hubot-thank-you",
