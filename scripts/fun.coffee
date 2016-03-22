@@ -3,8 +3,11 @@
 #
 # Commands:
 #   hubot hammer time - Tell me what time it is
+#   hubot hi|hello - Tell me hello!
 #   hubot tell me a joke - Tells you a random joke
 #   hubot what road do i take - Reminds you which way to go
+#   hubot where is your code - Tell you where my codebase is located
+#   hubot who are you - Respond with who I am
 
 hammerTime = [
   "http://i.imgur.com/pms5kRX.jpg",
@@ -46,6 +49,15 @@ module.exports = (robot) ->
     
   robot.respond /do you even hubot/i, (msg) ->
     msg.send "Do you even human?"
+
+  robot.respond /(hi)|(hello)/i, (msg) ->
+    msg.send "Hi! Type `rafiki help` to see what I can do!"
+
+  robot.respond /who are you/i, (msg) ->
+    msg.send "I am a simple helpful faculty member who is online 24/7 and can help you remember important things. I can also have fun if you ask! Simply ask me `rafiki help` to see what I can do."
+
+  robot.respond /where is your code/i, (msg) ->
+    msg.send "My code is located at https://github.com/StPaulThorndale/hubot-rafiki. Feel free to take a look to see how I work!"
 
   robot.respond /TIME$/i, (msg) ->
     msg.send msg.random hammerTime
