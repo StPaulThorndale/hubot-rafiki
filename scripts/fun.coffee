@@ -2,6 +2,7 @@
 #   random hubot scripts for specific responses
 #
 # Commands:
+#   hubot hammer time - Tell me what time it is
 #   hubot tell me a joke - Tells you a random joke
 #   hubot what road do i take - Reminds you which way to go
 
@@ -45,6 +46,10 @@ module.exports = (robot) ->
     
   robot.respond /do you even hubot/i, (msg) ->
     msg.send "Do you even human?"
+
+  robot.respond /TIME$/i, (msg) ->
+    msg.send msg.random hammerTime
+    msg.send "Server time is: #{new Date()}"
 
   robot.respond /timer\s+(\d+)\s+(.*)$/i, (res) ->
     min = res.match[1]
