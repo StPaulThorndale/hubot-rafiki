@@ -5,6 +5,7 @@
 #   hubot hammer time - Tell me what time it is
 #   hubot hi|hello - Tell me hello!
 #   hubot tell me a joke - Tells you a random joke
+#   hubot what do you look like - Show a picture of what I look like
 #   hubot what road do i take - Reminds you which way to go
 #   hubot where is your code - Tell you where my codebase is located
 #   hubot who are you - Respond with who I am
@@ -36,6 +37,14 @@ jokes = [
    "What did the shoes say to the pants? SUP, BRITCHES!",
 ]
 
+rafikiPictures = [
+  "http://www.disneyclips.com/imagesnewb/images/us15.gif",
+  "http://www.lionking.org/imgarchive/Clip_Art/rafiki05.gif",
+  "http://2.bp.blogspot.com/-Lef6N7lwrp8/UvGnqRS1NWI/AAAAAAAAAX4/8KpkQSRBQ2U/s1600/Character+6+-+Rafiki.png",
+  "http://www.disneyclips.com/imagesnewb/images/cliprafi2.gif"
+]
+
+
 module.exports = (robot) ->
 
   robot.respond /ADAPTER$/i, (msg) ->
@@ -62,6 +71,9 @@ module.exports = (robot) ->
   robot.respond /TIME$/i, (msg) ->
     msg.send msg.random hammerTime
     msg.send "Server time is: #{new Date()}"
+
+  robot.respond /what do you look like/i, (msg) ->
+    msg.send msg.random rafikiPictures
 
   robot.respond /timer\s+(\d+)\s+(.*)$/i, (res) ->
     min = res.match[1]
