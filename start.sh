@@ -4,7 +4,7 @@
 
 HUBOT_HOME_DIR=./
 HUBOT_BIN='bin/hubot'
-HUBOT_LOGS_DIR=~/logs
+HUBOT_LOGS_DIR=./logs
 
 cd ${HUBOT_HOME_DIR}
 if [ "$(pgrep node)" != "" ]

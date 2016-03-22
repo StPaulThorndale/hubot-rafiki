@@ -16,7 +16,7 @@
     "hubot-dogeme": "^1.0.0",
     "hubot-fliptable": "^1.2.0",
     "hubot-flowdock": "^0.7.6",
-    "hubot-freshdesk": "^1.0.2",
+    "hubot-freshdesk": ">= 0.0.0",
     "hubot-google-images": "^0.2.6",
     "hubot-google-translate": "^0.2.0",
     "hubot-help": "^0.1.3",
