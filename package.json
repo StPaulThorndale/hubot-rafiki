@@ -24,6 +24,7 @@
     "hubot-http-status": "^0.2.1",
     "hubot-maps": "0.0.2",
     "hubot-pugme": "^0.1.0",
+    "hubot-pusheen": "0.0.1",
     "hubot-redis-brain": "0.0.3",
     "hubot-remember-multiline": "^1.3.5",
     "hubot-rules": "^0.1.1",
