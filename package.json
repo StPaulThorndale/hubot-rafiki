@@ -31,8 +31,10 @@
     "hubot-scripts": "^2.16.2",
     "hubot-shipit": "^0.2.0",
     "hubot-thank-you": "0.0.3",
+    "hubot-timezone": "^0.9.0",
     "hubot-victory": "^1.5.2",
-    "hubot-youtube": "^1.0.1"
+    "hubot-youtube": "^1.0.1",
+    "querystring": "^0.2.0"
   },
   "engines": {
     "node": "0.10.x"
