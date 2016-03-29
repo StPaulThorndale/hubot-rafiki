@@ -6,6 +6,7 @@
 #   hubot hi|hello - Tell me hello!
 #   hubot pun me - Get a pun
 #   hubot tell me a joke - Tells you a random joke
+#   hubot time in <location> - Display a link that shows what time it is in a given location
 #   hubot what do you look like - Show a picture of what I look like
 #   hubot what road do i take - Reminds you which way to go
 #   hubot where is your code - Tell you where my codebase is located
@@ -43,7 +44,7 @@ jokes = [
   "What does a nosey pepper do? Get jalapeno business.",
   "What is Bruce Lee's favorite drink? Wataaaaah!",
   "You kill vegetarian vampires with a steak to the heart.",
-  "There was a prison break and I saw a midget climb up the fence. As he jumped down her sneered at me and I thought, well that's a little condescending.",
+  "There was a prison break and I saw a midget climb up the fence. As he jumped down he sneered at me and I thought, well that's a little condescending.",
   "If you want to catch a squirrel just climb a tree and act like a nut.",
   "A magician was walking down the street and turned into a grocery store.",
   "A blind man walks into a bar. And a table. And a chair.",
@@ -211,6 +212,7 @@ puns = [
   "/em fails to pun."
 ]
 
+
 module.exports = (robot) ->
 
   robot.respond /ADAPTER$/i, (msg) ->
@@ -243,6 +245,9 @@ module.exports = (robot) ->
   robot.respond /TIME$/i, (msg) ->
     msg.send msg.random hammerTime
     msg.send "Server time is: #{new Date()}"
+
+  robot.respond /time in (.*)$/i, (msg) ->
+    msg.send "Click here to see the time: https://www.google.com/search?q=time+in+#{msg.match[1]}"
 
   robot.respond /what do you look like/i, (msg) ->
     msg.send msg.random rafikiPictures
