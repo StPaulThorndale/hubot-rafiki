@@ -43,6 +43,7 @@ jokes = [
   "A farmer in the field with his cows counted 196 of them, but when he rounded them up he had 200.",
   "What does a nosey pepper do? Get jalapeno business.",
   "What is Bruce Lee's favorite drink? Wataaaaah!",
+  "What does a baby computer call its father? data",
   "You kill vegetarian vampires with a steak to the heart.",
   "There was a prison break and I saw a midget climb up the fence. As he jumped down he sneered at me and I thought, well that's a little condescending.",
   "If you want to catch a squirrel just climb a tree and act like a nut.",
