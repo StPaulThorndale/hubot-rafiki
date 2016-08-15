@@ -45,6 +45,23 @@ git status
 git push -u origin master
 ```
 
+### Installing Redis-Server
+
+The steps below were taken on an Ubuntu 14 (trusty) machine to install `redis-server` for rafiki's brain (instructions taken from http://redis.io/topics/quickstart):
+
+```
+cd /tmp
+export http_proxy=http://web-proxy.corp.hpecorp.net:8080
+export https_proxy=http://web-proxy.corp.hpecorp.net:8080
+sudo apt-get install -y tcl8.5
+wget http://download.redis.io/redis-stable.tar.gz
+tar xvzf redis-stable.tar.gz
+cd redis-stable
+make
+make test
+sudo make install
+```
+
 ### Running rafiki Locally
 
 You can test your hubot by running the following, however some plugins will not
