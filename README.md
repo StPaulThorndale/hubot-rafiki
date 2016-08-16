@@ -258,6 +258,20 @@ Add the subdomain hubot should connect to. If you web URL looks like
 
 [hubot-adapters]: https://github.com/github/hubot/blob/master/docs/adapters.md
 
+## Aliases
+
+The following are some aliases we have defined for the bot in its **redis** brain:
+
+```
+road : what road do i take
+gangnam : oppa gangnam style
+what do you remember : list remem
+hammer time : time
+flowdock : what is flowdock
+tickets : get tickets
+ticket : get tickets
+```
+
 ## Restart the bot
 
 You may want to get comfortable with `heroku logs` and `heroku restart` if
