@@ -61,7 +61,7 @@ make
 make test
 sudo make install
 
-### Running hubot-rafiki Locally
+### Running rafiki Locally
 
 You can test your hubot by running the following, however some plugins will not
 behave as expected unless the [environment variables](#configuration) they rely
