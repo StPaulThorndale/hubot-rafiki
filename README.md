@@ -12,9 +12,24 @@ has, etc!
 [hubot]: http://hubot.github.com
 https://github.com/StPaulThorndale/hubot-rafiki/commit/fb8936783e1457ee407ce304fd9e0d78b96ba86d[generator-hubot]: https://github.com/github/generator-hubot
 
-## How to get and run rafiki
+# Quickstart
 
-## How was rafiki originally created?
+There are two ways to get and run rafiki:
+
+1. On bare metal
+2. As a Docker container
+
+## Running on bare metal
+
+**TBD**
+
+## Running as a Docker container
+
+**TBD**
+
+***
+
+# How was rafiki originally created?
 
 The steps below were taken on an Ubuntu 14 (trusty) machine to build rafiki and commit the code into this repository:
 
@@ -108,7 +123,7 @@ The steps below were taken on an Ubuntu 14 (trusty) machine to build rafiki and 
     git push -u origin master
     ```
 
-### Installing Redis-Server
+## Installing Redis-Server
 
 The steps below were taken on an Ubuntu 14 (trusty) machine to install `redis-server` for rafiki's brain (instructions taken from http://redis.io/topics/quickstart):
 
@@ -123,8 +138,15 @@ cd redis-stable
 make
 make test
 sudo make install
+```
 
-### Running rafiki Locally
+***
+
+# Original hubot INFO
+
+The information in the below sections are cloned from the original hubot source.
+
+## Running rafiki Locally
 
 You can test your hubot by running the following, however some plugins will not
 behave as expected unless the [environment variables](#configuration) they rely
