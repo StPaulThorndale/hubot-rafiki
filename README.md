@@ -16,34 +16,95 @@ https://github.com/StPaulThorndale/hubot-rafiki/commit/fb8936783e1457ee407ce304f
 
 The steps below were taken on an Ubuntu 14 (trusty) machine to build rafiki and commit the code into this repository:
 
-```
-cd ~
-export http_proxy=[PROXY_HOST]:8080
-export https_proxy=[PROXY_HOST]:8080
-curl -sL https://deb.nodesource.com/setup | sudo bash -
-sudo apt-get install nodejs build-essential libexpat1-dev libexpat1 libicu-dev
-sudo npm install npm -g
-sudo npm install -g yo generator-hubot
-mkdir hubot-rafiki
-cd hubot-rafiki
-yo hubot
-bin/hubot
-nano hubot.env
-nano start.sh
-chmod +x start.sh
-chmod +x hubot.env
-bash start.sh
-sudo apt-get install git
-git init
-git add .
-git config --global user.email "colossus9@hpe.com"
-git config --global user.name "colossus9"
-git commit -m "Initial commit of working rafiki hubot"
-git remote add origin https://github.com/StPaulThorndale/hubot-rafiki.git
-git pull origin master
-git status
-git push -u origin master
-```
+1. Set the **web proxy** _(if necessary)_.
+
+    ```
+    cd ~
+    export http_proxy=[PROXY_HOST]:8080
+    export https_proxy=[PROXY_HOST]:8080
+    ```
+
+2. Install **NodeSource Node.js**.
+    - If **Debian-based** linux:
+
+        ```
+        curl -sL https://deb.nodesource.com/setup | sudo -E bash -
+        ```
+
+    - If **RPM-based** linux:
+
+        ```
+        curl -sL https://rpm.nodesource.com/setup | sudo -E bash -
+        ```
+
+3. Install supporting **packages**.
+    - If **Debian-based** linux:
+
+        ```
+        sudo -E apt-get install -y nodejs build-essential libexpat1-dev libexpat1 libicu-dev
+        ```
+
+    - If **RPM-based** linux:
+
+        ```
+        sudo -E yum install -y nodejs 
+        ```
+    
+4. Install **npm** modules.
+
+    ```
+    sudo -E npm install npm -g
+    sudo -E npm install -g yo generator-hubot
+    ```
+
+5. **Instantiate** the hubot.
+
+    ```
+    mkdir hubot-rafiki
+    cd hubot-rafiki
+    yo hubot
+    bin/hubot
+    ```
+
+6. **Configure** the hubot.
+
+    ```
+    vi hubot.env
+    vi start.sh
+    chmod +x start.sh
+    chmod +x hubot.env
+    ```
+
+7. **Start** and **test** the hubot.
+
+    ```
+    bash start.sh
+    ```
+
+8. Ensure **git** is installed so we can communicate with this GitHub repository.
+
+    ```
+    sudo -E apt-get install git
+    ```
+    
+9. Convert this directory into a **git** repository.
+
+    ```
+    git init
+    git add .
+    git config --global user.email "colossus9@hpe.com"
+    git config --global user.name "colossus9"
+    ```
+
+10. If you have any code changes, **commit and push** then into GitHub.
+
+    ```
+    git commit -m "Initial commit of working rafiki hubot"
+    git remote add origin https://github.com/StPaulThorndale/hubot-rafiki.git
+    git pull origin master
+    git status
+    git push -u origin master
+    ```
 
 ### Installing Redis-Server
 
