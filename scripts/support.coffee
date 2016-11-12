@@ -10,7 +10,7 @@ importantLinks = """
 The following is a list of important links for you:
 
 - **IT Support Ticket Submission:** Send an email to support@splc.freshdesk.com (To retrieve tickets, use `rafiki get tickets`)
-- **Flowdock Information:** https://github.com/StPaulThorndale/Support/wiki/Flowdock
+- **Support Documentation on GitHub:** https://github.com/StPaulThorndale/Support/wiki
 - **Printer Drivers**
     - Black/White Ricoh (public link) - http://support.ricoh.com/bb/html/dr_ut_e/ra/model/mp6002_7502_9002/mp6002_7502_9002en.htm
     - Color Ricoh (public link) - http://support.ricoh.com/bb/html/dr_ut_e/ra/model/mpc450/mpc450en.htm
