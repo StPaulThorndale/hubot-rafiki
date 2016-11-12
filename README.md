@@ -12,7 +12,9 @@ has, etc!
 [hubot]: http://hubot.github.com
 https://github.com/StPaulThorndale/hubot-rafiki/commit/fb8936783e1457ee407ce304fd9e0d78b96ba86d[generator-hubot]: https://github.com/github/generator-hubot
 
-### Creating rafiki
+## How to get and run rafiki
+
+## How was rafiki originally created?
 
 The steps below were taken on an Ubuntu 14 (trusty) machine to build rafiki and commit the code into this repository:
 
@@ -47,9 +49,9 @@ The steps below were taken on an Ubuntu 14 (trusty) machine to build rafiki and 
     - If **RPM-based** linux:
 
         ```
-        sudo -E yum install -y nodejs 
+        sudo -E yum install -y nodejs
         ```
-    
+
 4. Install **npm** modules.
 
     ```
@@ -86,7 +88,7 @@ The steps below were taken on an Ubuntu 14 (trusty) machine to build rafiki and 
     ```
     sudo -E apt-get install git
     ```
-    
+
 9. Convert this directory into a **git** repository.
 
     ```
