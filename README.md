@@ -46,7 +46,7 @@ There are two ways to get and run rafiki:
     - If **Debian-based** linux:
 
         ```
-        sudo -E apt-get install -y nodejs build-essential libexpat1-dev libexpat1 libicu-dev git
+        sudo -E apt-get install -y build-essential libexpat1-dev libexpat1 libicu-dev git nodejs node-gyp
         ```
 
     - If **RPM-based** linux:
@@ -61,11 +61,31 @@ There are two ways to get and run rafiki:
     sudo -E npm install npm -g
     ```
 
-5. Decide **where** on your filesystem you would like to run the bot. In this example, we will install the bot to `/opt`:
+5. Decide **where** on your filesystem you would like to run the bot. In this example, we will install the bot to `/opt/hubot-rafiki`:
 
     ```
     cd /opt
     git clone https://github.com/StPaulThorndale/hubot-rafiki.git
+    cd ./hubot-rafiki
+    ```
+
+6. **Install** node modules:
+
+    ```
+    npm install
+    ```
+
+7. Create the main `hubot.env` file from the template:
+
+    ```
+    cp ./ hubot.env-template ./hubot.env
+    ```
+
+8. Update `hubot.env` with actual values.
+9. Fix the `scoped-http-client` module:
+
+    ```
+    ./fix-http.sh
     ```
 
 ## Running as a Docker container
@@ -103,7 +123,7 @@ The steps below were taken on an Ubuntu 14 (trusty) machine to build rafiki and 
     - If **Debian-based** linux:
 
         ```
-        sudo -E apt-get install -y nodejs build-essential libexpat1-dev libexpat1 libicu-dev
+        sudo -E apt-get install -y build-essential libexpat1-dev libexpat1 libicu-dev git nodejs node-gyp
         ```
 
     - If **RPM-based** linux:
