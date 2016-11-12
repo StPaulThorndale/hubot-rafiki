@@ -33,14 +33,40 @@ There are two ways to get and run rafiki:
     - If **Debian-based** linux:
 
         ```
-        curl -sL https://deb.nodesource.com/setup | sudo -E bash -
+        curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
         ```
 
     - If **RPM-based** linux:
 
         ```
-        curl -sL https://rpm.nodesource.com/setup | sudo -E bash -
+        curl -sL https://rpm.nodesource.com/setup_4.x | sudo -E bash -
         ```
+
+3. Install supporting **packages**.
+    - If **Debian-based** linux:
+
+        ```
+        sudo -E apt-get install -y nodejs build-essential libexpat1-dev libexpat1 libicu-dev git
+        ```
+
+    - If **RPM-based** linux:
+
+        ```
+        sudo -E yum install -y nodejs
+        ```
+
+4. Install **npm**:
+
+    ```
+    sudo -E npm install npm -g
+    ```
+
+5. Decide **where** on your filesystem you would like to run the bot. In this example, we will install the bot to `/opt`:
+
+    ```
+    cd /opt
+    https://github.com/StPaulThorndale/hubot-rafiki.git
+    ```
 
 ## Running as a Docker container
 
