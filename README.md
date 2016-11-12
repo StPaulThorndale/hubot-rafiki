@@ -16,8 +16,8 @@ https://github.com/StPaulThorndale/hubot-rafiki/commit/fb8936783e1457ee407ce304f
 
 There are two ways to get and run rafiki:
 
-1. On bare metal
-2. As a Docker container
+- On bare metal
+- As a Docker container
 
 ## Running on bare metal
 
@@ -78,7 +78,7 @@ There are two ways to get and run rafiki:
 7. Create the main `hubot.env` file from the template:
 
     ```
-    cp ./ hubot.env-template ./hubot.env
+    cp ./hubot.env-template ./hubot.env
     ```
 
 8. Update `hubot.env` with actual values.
@@ -89,7 +89,7 @@ There are two ways to get and run rafiki:
     ./fix-freshdesk.sh
     ```
 
-10. **Start** the hubot and tail the logs to ensure it is successful:
+10. **Start** the hubot and tail the logs to ensure the startup is successful:
 
     ```
     ./start.sh
