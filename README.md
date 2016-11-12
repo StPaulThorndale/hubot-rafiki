@@ -82,11 +82,20 @@ There are two ways to get and run rafiki:
     ```
 
 8. Update `hubot.env` with actual values.
-9. Fix the `scoped-http-client` module:
+9. Fix the `scoped-http-client` and `hubot-freshdesk` modules:
 
     ```
     ./fix-http.sh
+    ./fix-freshdesk.sh
     ```
+
+10. **Start** the hubot and tail the logs to ensure it is successful:
+
+    ```
+    ./start.sh
+    tail -f logs/rafiki.log
+    ```
+
 
 ## Running as a Docker container
 

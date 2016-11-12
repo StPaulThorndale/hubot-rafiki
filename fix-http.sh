@@ -1,10 +1,11 @@
 #!/bin/sh
 #
-# Filename: fit-http.sh
-# Description: Fix the scoped-http-client connection parameters
+# Filename:       fit-http.sh
+#
+# Description:    Fix the scoped-http-client connection parameters
 #
 
-# Set parameters
+# Set parameter(s)
 DIR="./"
 PROXY_HOST="web-proxy.company.com"
 PROXY_PORT="8080"
