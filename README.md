@@ -21,11 +21,30 @@ There are two ways to get and run rafiki:
 
 ## Running on bare metal
 
-**TBD**
+1. Set the **web proxy** _(if necessary)_.
+
+    ```
+    cd ~
+    export http_proxy=[PROXY_HOST]:8080
+    export https_proxy=[PROXY_HOST]:8080
+    ```
+
+2. Install **NodeSource Node.js**.
+    - If **Debian-based** linux:
+
+        ```
+        curl -sL https://deb.nodesource.com/setup | sudo -E bash -
+        ```
+
+    - If **RPM-based** linux:
+
+        ```
+        curl -sL https://rpm.nodesource.com/setup | sudo -E bash -
+        ```
 
 ## Running as a Docker container
 
-**TBD**
+**Prerequisite:** This hubot connects to **Flowdock**. Containers on your docker host must have internet connectivity for the connection to succeed.
 
 ***
 
