@@ -65,7 +65,7 @@ There are two ways to get and run rafiki:
 
     ```
     cd /opt
-    https://github.com/StPaulThorndale/hubot-rafiki.git
+    git clone https://github.com/StPaulThorndale/hubot-rafiki.git
     ```
 
 ## Running as a Docker container
