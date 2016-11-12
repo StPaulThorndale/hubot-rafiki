@@ -1,6 +1,7 @@
 #!/bin/sh
 #
-# Fix the scoped-http-client connection parameters
+# Filename: fit-http.sh
+# Description: Fix the scoped-http-client connection parameters
 #
 
 # Set parameters
