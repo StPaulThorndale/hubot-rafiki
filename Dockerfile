@@ -9,6 +9,10 @@
 #   docker tag colossus9/hubot-rafiki
 #   docker push colossus9/hubot-rafiki:latest
 #
+# Example run:
+#
+#   docker run -d -p 5555:5555 -v /opt/hubot-rafiki/hubot.env:/opt/hubot-rafiki/hubot.env colossus9/hubot-rafiki
+#
 
 FROM ubuntu:latest
 MAINTAINER James Garcia <colossus9@hpe.com>
@@ -36,3 +40,10 @@ WORKDIR /opt/hubot-rafiki
 
 # Install node modules
 RUN npm install
+
+# Fix node modules
+RUN /opt/hubot-rafiki/fix-http.sh
+RUN /opt/hubot-rafiki/fix-freshdesk.sh
+
+# Start it up
+ENTRYPOINT ["/opt/hubot-rafiki/start.sh"]
