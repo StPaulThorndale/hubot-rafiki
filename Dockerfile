@@ -2,6 +2,8 @@
 #
 # Example build:
 #
+#   git clone https://github.com/StPaulThorndale/hubot-rafiki.git
+#   cd ./hubot-rafiki
 #   docker build --no-cache=true -t colossus9/hubot-rafiki .
 #
 # Example push to Docker Hub:
