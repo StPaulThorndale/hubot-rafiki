@@ -49,7 +49,7 @@ There are two ways to get and run rafiki:
     - If **RPM-based** linux:
 
         ```
-        sudo -E yum install -y gcc-c++ make expat-devel expat libicu-devel git nodejs node-gyp
+        sudo -E yum install -y gcc-c++ make expat-devel expat libicu-devel git nodejs
         ```
 
 4. Install **npm**:
