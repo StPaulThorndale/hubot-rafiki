@@ -49,7 +49,6 @@ There are two ways to get and run rafiki:
     - If **RPM-based** linux:
 
         ```
-        sudo -E yum groupinstall -y "Development Tools"
         sudo -E yum install -y gcc-c++ make expat-devel expat libicu-devel git nodejs node-gyp
         ```
 
