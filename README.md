@@ -50,7 +50,7 @@ There are two ways to get and run rafiki:
 
         ```
         sudo -E yum groupinstall -y "Development Tools"
-        sudo -E yum install -y libexpat1-dev libexpat1 libicu-dev git nodejs node-gyp
+        sudo -E yum install -y gcc-c++ make expat-devel expat libicu-devel git nodejs node-gyp
         ```
 
 4. Install **npm**:
