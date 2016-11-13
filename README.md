@@ -49,7 +49,8 @@ There are two ways to get and run rafiki:
     - If **RPM-based** linux:
 
         ```
-        sudo -E yum install -y nodejs
+        sudo -E yum groupinstall -y "Development Tools"
+        sudo -E yum install -y libexpat1-dev libexpat1 libicu-dev git nodejs node-gyp
         ```
 
 4. Install **npm**:
