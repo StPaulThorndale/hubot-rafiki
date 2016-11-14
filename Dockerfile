@@ -49,4 +49,4 @@ RUN /opt/hubot-rafiki/fix-http.sh
 RUN /opt/hubot-rafiki/fix-freshdesk.sh
 
 # Start it up
-CMD ./start_docker.sh
+ENTRYPOINT exec ./start_docker.sh
