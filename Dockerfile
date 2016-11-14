@@ -13,6 +13,7 @@
 #
 # Example run:
 #
+#   << Place valid configuration on host at /opt/hubot-rafiki/hubot.env >>
 #   docker run -d -p 5555:5555 -v /opt/hubot-rafiki/hubot.env:/opt/hubot-rafiki/hubot.env colossus9/hubot-rafiki
 #
 
@@ -48,4 +49,4 @@ RUN /opt/hubot-rafiki/fix-http.sh
 RUN /opt/hubot-rafiki/fix-freshdesk.sh
 
 # Start it up
-ENTRYPOINT ["/opt/hubot-rafiki/start.sh"]
+CMD ./start_docker.sh
