@@ -8,7 +8,8 @@
 #
 # Example push to Docker Hub:
 #
-#   docker tag colossus9/hubot-rafiki
+#   docker tag colossus9/hubot-rafiki colossus9/hubot-rafiki
+#   docker login
 #   docker push colossus9/hubot-rafiki:latest
 #
 # Example run:
