@@ -12,8 +12,8 @@ what functionality he has, etc!
 
 There are two ways to get and run rafiki:
 
-- On bare metal
-- As a Docker container
+- [Running on bare metal](#running-on-bare-metal)
+- [Running as a Docker container](#running-as-a-docker-container)
 
 ## Running on bare metal
 
