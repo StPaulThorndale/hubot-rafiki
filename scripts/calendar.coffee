@@ -60,7 +60,7 @@ calendar_2016_2017 = """
 - Third Quarter - Jan 3 - Mar 9
 - Fourth Quarter - Mar 19 - May 24
 
-**warning** Be sure to check [the official calendar](http://stpaulthorndale.com/wp-content/uploads/2017/05/2017-2018-SPL-School-Calendar.pdf) for the latest updates.
+:warning: Be sure to check [the official calendar](http://stpaulthorndale.com/wp-content/uploads/2017/05/2017-2018-SPL-School-Calendar.pdf) for the latest updates.
 """
 
 module.exports = (robot) ->
