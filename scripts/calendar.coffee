@@ -66,4 +66,4 @@ calendar_2016_2017 = """
 module.exports = (robot) ->
 
   robot.respond /school calendar/i, (msg) ->
-     msg.send "#{msg.message.user.name}, Here is the 2016-2017 School Calendar (as of 3/29/2016):" + calendar_2016_2017
+     msg.send "#{msg.message.user.name}, Here is the 2017-2018 School Calendar (as of 8/3/2017):" + calendar_2016_2017
