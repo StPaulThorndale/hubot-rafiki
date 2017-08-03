@@ -9,50 +9,56 @@ calendar_2016_2017 = """
 
 **Important Dates for St. Paul Families:**
 
-**August 1 -** Enrollment Complete/Tuition and Fees Due
-**August 17 -** First Day - Early Release at Noon
+**August 14 -** Enrollment Complete/Tuition & Fees Due
+**August 16 -** First Day - Early Release at Noon
+**August 20 -** Back to School Hamburger Social
 
-**September 5 -** School Holiday - Labor Day
+**September 4 -** School Holiday - Labor Day
+**September 11-15 -** Book Fair
+**September 13 -** Grandparent's Day Luncheon
 
-**October 14 -** Early Release at Noon
-**October 17-21 -** Fall Break
+**October 13 -** Early Release at Noon
+**October 13-14 -** State Volleyball Tny (Tomball)
+**October 16-20 -** Fall Break
 
-**November 9 -** Annual Chili Supper
-**November 21-25 -** Thanksgiving Break
+**November 8 -** Annual Chili Supper
+**November 20-24 -** Thanksgiving Break
 
-**December 2 -** Christmas Musical
-**December 16 -** Early Release at Noon
-**December 19 -** January 2 - Christmas Break
+**December 1 -** Christmas Musical
+**December 20 -** Early Release at Noon
+**December 21 -** January 2 - Christmas Break
 
-**January 6-7 -** St. Paul Basketball Tourney
-**January 26-27 -** No Pre-K or MDO for Conference
+**January 5-6 -** St. Paul Basketball Tourney
+**January 25-26 -** No Pre-K or MDO for Conference
 
-**February 20 -** School Holiday - President's Day
+**February 16-18 -** State Basketball Tny (Tomball)
+**February 19 -** School Holiday - President's Day
 
-**March 6-10 -** National Lutheran Schools Week
-**March 10 -** Early Release at Noon
-**March 13-17 -** Spring Break
+**March 5-9 -** National Lutheran Schools Week
+**March 7 -** Annual Open House and Luncheon
+**March 9 -** Early Release at Noon
+**March 12-16 -** Spring Break
+**March 23 -** Milam County Junior Livestock Show
+**March 25 -** Confirmation
+**March 29 -** Early Release at Noon
+**March 30 -** School Holiday - Good Friday
 
-**April 13 -** Bad Weather Day
-**April 14 -** School Holiday - Good Friday
-**April 17 -** Bad Weather Day
-**April 21 -** St. Paul Field Day
+**April 2 -** Bad Weather Day
+**April 20 -** St. Paul Field Day
 
-**May 6 -** PSIA State Meet
-**May 18 -** Pre-K 4, K, 8th Grade Graduation
-**May 19 -** Last Day of School - Release at Noon
+**May 23 -** Pre-K 4, K, 8th Grade Graduation
+**May 24 -** Last Day of School - Release at Noon
 
 **Dates TBD:**
-- State Volleyball Tournament (OCT)
-- State Basketball Tournament (FEB)
-- PSIA District Meet (FEB)
-- PTF Monthly Meetings
+- District PSIA
+- State PSIA
+- Confirm Tourneys
 
 **Nine-Week Quarters (167 Total Student Days):**
-- First Quarter - Aug 17 - Oct 14
-- Second Quarter - Oct 24 - Dec 16
-- Third Quarter - Jan 3 - Mar 10
-- Fourth Quarter - Mar 20 - May 19
+- First Quarter - Aug 16 - Oct 13
+- Second Quarter - Oct 23 - Dec 20
+- Third Quarter - Jan 3 - Mar 9
+- Fourth Quarter - Mar 19 - May 24
 """
 
 module.exports = (robot) ->
