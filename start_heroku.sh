@@ -15,10 +15,10 @@ fi
 
 mkdir -p ${HUBOT_LOGS_DIR}
 
-if [ ! -f ./hubot.env ]; then
-    echo "hubot.env file not found!"
-    exit 1
-fi
+# if [ ! -f ./hubot.env ]; then
+#    echo "hubot.env file not found!"
+#    exit 1
+# fi
 
 # source ./hubot.env
 
