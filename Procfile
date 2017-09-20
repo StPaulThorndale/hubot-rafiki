@@ -1,1 +1,1 @@
-release: start.sh
+release: ./start_heroku.sh
