@@ -14,6 +14,7 @@ There are two ways to get and run rafiki:
 
 - [Running on bare metal](#running-on-bare-metal)
 - [Running as a Docker container](#running-as-a-docker-container)
+- [Running on Heroku](#running-on-heroku)
 
 ## Running on bare metal
 
@@ -97,6 +98,13 @@ There are two ways to get and run rafiki:
 ## Running as a Docker container
 
 **Prerequisite:** This hubot connects to **Flowdock**. Containers on your docker host must have internet connectivity for the connection to succeed.
+
+## Running on Heroku
+
+The easiest way to run this hubot is to deploy to Heroku. It uses the Heroku "Release" phase to start it up. References:
+
+- [Run migrations when deploying to Heroku](http://mentalized.net/journal/2017/04/22/run-rails-migrations-on-heroku-deploy/)
+- [Heroku Dev Center - Release Phase](https://devcenter.heroku.com/articles/release-phase#when-does-the-release-command-run)
 
 ***
 
