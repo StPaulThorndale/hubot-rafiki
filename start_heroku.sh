@@ -20,6 +20,8 @@ if [ ! -f ./hubot.heroku.env ]; then
    exit 1
 fi
 
+npm install
+
 source ./hubot.heroku.env
 
 ./fix-http.sh
