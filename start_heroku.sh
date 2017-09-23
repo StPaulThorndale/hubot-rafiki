@@ -22,6 +22,9 @@ fi
 
 source ./hubot.heroku.env
 
+./fix-http.sh
+./fix-freshdesk.sh
+
 ${HUBOT_HOME_DIR}${HUBOT_BIN} --name ${HUBOT_NAME} --adapter ${ADAPTER} >${HUBOT_LOGS_DIR}/${HUBOT_NAME}.log 2>&1
 
 sleep 2
