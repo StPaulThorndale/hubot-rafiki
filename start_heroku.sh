@@ -22,8 +22,7 @@ mkdir -p ${HUBOT_LOGS_DIR}
 
 # source ./hubot.env
 
-echo "Testing heroku get..."
-heroku config:get TEST_VAR
+echo "TEST_VAR is $TEST_VAR"
 
 ${HUBOT_HOME_DIR}${HUBOT_BIN} --name ${HUBOT_NAME} --adapter ${ADAPTER} >${HUBOT_LOGS_DIR}/${HUBOT_NAME}.log 2>&1 &
 
