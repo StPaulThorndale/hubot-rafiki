@@ -1,11 +1,33 @@
 {
   "name": "rafiki",
-  "version": "0.0.0",
-  "private": true,
+  "version": "0.2.0",
+  "publishConfig": {
+    "tag": "next"
+  },
   "author": "jgarcia786@yahoo.com",
+  "keywords": [
+    "github",
+    "hubot",
+    "flowdock",
+    "bot"
+  ],
   "description": "A simple helpful robot for SPLC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StPaulThorndale/hubot-rafiki.git"
+  },
   "dependencies": {
-    "hubot": "^2.18.0",
+    "async": ">=0.1.0 <1.0.0",
+    "chalk": "^1.0.0",
+    "cline": "^0.8.2",
+    "coffee-script": "1.6.3",
+    "connect-multiparty": "^1.2.5",
+    "express": "^3.21.2",
+    "log": "1.4.0",
+    "optparse": "1.0.4",
+    "scoped-http-client": "0.11.0",
+    #"hubot": "^2.18.0",
     "hubot-ambush": "0.0.3",
     "hubot-auth": "^1.2.0",
     "hubot-business-cat": "^1.5.0",
@@ -36,7 +58,32 @@
     "hubot-youtube": "^1.0.1",
     "querystring": "^0.2.0"
   },
+  "devDependencies": {
+    "chai": "~2.1.0",
+    "coveralls": "^2.13.1",
+    "mocha": "^2.1.0",
+    "mockery": "^1.4.0",
+    "nyc": "^11.0.2",
+    "sinon": "~1.17.0",
+    "sinon-chai": "^2.8.0",
+    "standard": "^10.0.2",
+    "semantic-release": "^6.3.6"
+  },
   "engines": {
-    "node": "0.10.x"
+    "node": "> 4.0.0",
+    "npm": "> 2.0.0"
+  }
+  "main": "./index",
+  "bin": {
+    "hubot": "./bin/hubot"
+  },
+  "scripts": {
+    "start": "bin/hubot",
+    "pretest": "standard",
+    "test": "nyc --reporter=html --reporter=text mocha",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "test:smoke": "node src/**/*.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   }
 }
+
