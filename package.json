@@ -27,7 +27,6 @@
     "log": "1.4.0",
     "optparse": "1.0.4",
     "scoped-http-client": "0.11.0",
-    #"hubot": "^2.18.0",
     "hubot-ambush": "0.0.3",
     "hubot-auth": "^1.2.0",
     "hubot-business-cat": "^1.5.0",
